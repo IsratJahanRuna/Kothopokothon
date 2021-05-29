@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     <h1>this is redux</h1>
+     <h1>this is prantik</h1>
     </div>
   );
 }

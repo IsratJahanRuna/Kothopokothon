@@ -50,7 +50,7 @@ const Chat = () => {
     return (
         <div className="chat">
             {/* chat header */}
-            <div className="chat_header">
+            <div className="chat_header text-white">
                 <h4>To:<span className="chat_name">{chatName}</span></h4>
                 <strong>Details</strong>
             </div>
@@ -74,7 +74,7 @@ const Chat = () => {
                     <button onClick={sendMessage}>Send Message</button>
                 </form>
                 <IconButton>
-                    <MicNoneIcon className="chat_mic"></MicNoneIcon>
+                    <MicNoneIcon className="chat_mic text-white"></MicNoneIcon>
                 </IconButton>
                 
             </div>

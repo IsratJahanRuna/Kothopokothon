@@ -4,6 +4,7 @@
     flex: 0.65;
     height:100vh;
     background-color: white;
+    /* width: 100%; */
     
 }
 .chat_header{
@@ -11,20 +12,20 @@
     display:flex;
     justify-content:space-between;
     border-bottom: 1px solid lightgray;
-    background-color:rgb(235, 230, 230);
+    background-color:#EC5569;
 }
 .chat_header>h4{
     font-weight: 500;
-    color:gray;
+    color:rgb(243, 237, 237);
 }
 .chat_name{
-    color: black;
+    color: white;
 }
 .chat_input{
     display:flex;
     align-items: center;
     padding:10px 20px;
-    background-color:rgb(201, 196, 190)
+    background-color:#EC5569;
 }
 .chat_input>form{
     flex:1;

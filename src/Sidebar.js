@@ -45,7 +45,7 @@ const Sidebar = () => {
                     <input type="text" placeholder="Search"/>
                 </div>
                 <IconButton variant="outlined" className="sidebar_inputbutton">
-                <RateReviewOutlinedIcon onClick={addChat}></RateReviewOutlinedIcon>
+                <RateReviewOutlinedIcon className="text-white" onClick={addChat}></RateReviewOutlinedIcon>
                 </IconButton>
 
             </div>

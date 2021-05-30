@@ -41,4 +41,12 @@
 }
 .chat_message{
     flex:1;
+    overflow: scroll;
+}
+.chat_message::-webkit-scrollbar{
+    display: none;
+}
+.chat_message{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }

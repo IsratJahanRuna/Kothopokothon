@@ -8,6 +8,8 @@ import { selectChatId, selectChatName } from './features/counter/chatSlice';
 import Message from './Message';
 import firebase from 'firebase';
 import { selectUser } from './features/counter/userSlice';
+import FlipMove from 'react-flip-move';
+
 const Chat = () => {
     const[input,setInput] = useState("");
     const chatName=useSelector(selectChatName);
@@ -33,8 +35,6 @@ const Chat = () => {
 
     },[chatId])
 
-
-
     const sendMessage= (e)=>{
         e.preventDefault();
         db.collection("chats").doc(chatId).collection("messages").add({
@@ -56,9 +56,11 @@ const Chat = () => {
             </div>
             {/* chat message */}
                 <div className="chat_message">
+                    <FlipMove>
                     {messages.map(({id, data})=>(
                         <Message key={id} contents={data}></Message>
                     ))}
+                    </FlipMove>
                 </div>
             {/* chat input */}
             <div className="chat_input">

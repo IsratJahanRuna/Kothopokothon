@@ -1,7 +1,7 @@
 import { Button } from '@material-ui/core'
 import React from 'react'
 import { auth, provider } from './firebase'
-
+import {logo} from './images/love.png'
 import './login.css'
 function login() {
 
@@ -11,13 +11,13 @@ function login() {
     return (
         <div className="login">
             <div className="login_logo">
-                <img style={{width:"240px"}} src="https://st4.depositphotos.com/22203696/24072/v/450/depositphotos_240728592-stock-illustration-chat-icon-long-shadow-flat.jpg"/>
+                <img style={{width:"240px"}} src={logo}/>
 
                 
-                <h1 className='ms-3'>Kothopokothon</h1>
+                <h1 className='ms-3'>কথোপকথন</h1>
 
            </div>
-           <Button onClick={signIn}>Sign In</Button>
+           <Button  onClick={signIn}>Sign In</Button>
         </div>
     );
 }

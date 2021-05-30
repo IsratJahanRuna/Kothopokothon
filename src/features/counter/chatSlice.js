@@ -32,16 +32,7 @@ export const chatSlice = createSlice({
     //   state.value += action.payload;
     // },
   },
-//   extraReducers: (builder) => {
-//     builder
-//       .addCase(incrementAsync.pending, (state) => {
-//         state.status = 'loading';
-//       })
-//       .addCase(incrementAsync.fulfilled, (state, action) => {
-//         state.status = 'idle';
-//         state.value += action.payload;
-//       });
-//   },
+
 });
 
 export const { login, logout } = chatSlice.actions;
